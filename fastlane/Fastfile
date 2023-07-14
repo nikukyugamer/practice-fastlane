@@ -20,5 +20,8 @@ platform :ios do
   lane :custom_lane do
     puts 'Hello, custom lane World!'
     puts '# add actions here: https://docs.fastlane.tools/actions'
+
+    puts `pwd` #=> ./fastlane
+    puts `/usr/bin/env ruby ../app.rb` #=> 3
   end
 end
